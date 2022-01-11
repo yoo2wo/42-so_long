@@ -6,7 +6,7 @@
 /*   By: jayoo <jayoo@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 17:46:39 by jayoo             #+#    #+#             */
-/*   Updated: 2022/01/10 19:36:50 by jayoo            ###   ########.fr       */
+/*   Updated: 2022/01/12 00:23:53 by jayoo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <stdio.h>
 # include <stdlib.h>
 # include <fcntl.h>
+# include "libft/libft.h"
 
 # define IMG_W 32
 # define IMG_H 32

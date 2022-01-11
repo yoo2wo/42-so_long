@@ -1,30 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   so_long.c                                          :+:      :+:    :+:   */
+/*   ft_char_num.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jayoo <jayoo@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/28 15:02:10 by jayoo             #+#    #+#             */
-/*   Updated: 2022/01/12 00:34:24 by jayoo            ###   ########.fr       */
+/*   Created: 2022/01/12 00:30:00 by jayoo             #+#    #+#             */
+/*   Updated: 2022/01/12 00:31:34 by jayoo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "libft.h"
 
-int main(int argc, char *argv[])
+int	ft_char_num(char *str, char c)
 {
-	t_data	data;
-	t_map	map;
+	int i;
+	int n;
 
-	ft_window_size(&data, argv);
-	map.map = ft_calloc(data.size_y, sizeof(char *)); //y크기만큼 먼저 동적할당
-	if (!map.map)
+	i = 0;
+	n = 0;
+	if (!str)
+		return (-1);
+	while(str && str[i])
 	{
-		perror("Error : malloc error\n");
-		exit(1);
+		if (str[i++] == c)
+			n++;
 	}
-	ft_init(&data, &map);
-	ft_parse_input(&data, argv, argc);
-
+	return (n);
 }
