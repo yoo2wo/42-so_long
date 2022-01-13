@@ -18,6 +18,8 @@ static void	ft_map_error(char *str)
 	exit(EXIT_FAILURE);
 }
 
+
+
 void	ft_check_content(t_data *data)
 {
 	int y;
